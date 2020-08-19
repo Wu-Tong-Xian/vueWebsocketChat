@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <input type="file" id="file">
+
+  <script>
+    let file = document.getElementById('file')
+    file.addEventListener('change', (e) => {
+      let f = e.target.files[0]
+      let fr = new FileReader()
+      fr.readAsDataURL(f)
+      fr.onload = function () {
+        this.$socket.emit({
+          username,
+          avatar,
+          img: fr.result
+        })
+      }
+    })
+  </script>
+</body>
+
+</html>

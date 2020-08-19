@@ -1,0 +1,5 @@
+http://localhost:5005   根路径  
+
+
+WebSocket protocol 是HTML5一种新的协议。它实现了浏览器与服务器全双工通信(full-duple)
+socket io       vue中使用socket.io              https://blog.csdn.net/adley_app/article/details/83860022
